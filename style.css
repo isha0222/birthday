@@ -300,3 +300,55 @@ button:hover {
         padding: 12px;
     }
 }
+/* OUR MEMORIES - MOBILE PHOTO FIX */
+
+#page2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+#page2 .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 500px;
+    gap: 18px;
+    margin: 15px auto;
+}
+
+#page2 .gallery img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center;
+    border-radius: 14px;
+    transform: none;
+}
+
+@media (max-width: 600px) {
+    #page2 .gallery {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 5px;
+        gap: 15px;
+    }
+
+    #page2 .gallery img {
+        width: 100%;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+
+    #page2 .glow {
+        font-size: 25px;
+    }
+
+    #page2 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
