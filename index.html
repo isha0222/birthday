@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Special Day 💖</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="page active" id="intro">
+    <h1 class="glow" style="font-size: 40px;">Before you start… just know this is all about you ❤️💖</h1>
+    <p style="opacity:0.8">A little effort, just to make you smile 😊💖</p>
+    <p style="opacity:0.8">This is more than a story… it’s everything I feel for you 💖</p>
+    <button onclick="goStart()">Start Story ✨</button>
+  </div>
+
+  <div class="page" id="page1">
+    <h1 class="glow">Hey you… yeah, you 😌❤️</h1>
+    <p style="opacity:0.8">Every word here… is something I wish I could say to you in person 💭💖</p>
+    <button onclick="start()">Yesssss ❤️</button>
+  </div>
+
+  <div class="page" id="page2">
+    <h1 class="glow">Our Memories 📸</h1>
+    <p style="opacity:0.8">These aren’t just memories… they’re pieces of my heart 💖</p>
+    <p style="opacity:0.8">Not just pictures… these are the moments I’ll cherish forever 💖💖</p>
+    <div class="gallery">
+      <img src="p1.png"><img src="p2.png">
+      <img src="p3.png"><img src="p4.png">
+      <img src="p5.png">
+    </div>
+    <button onclick="nextPage(3)">Continuee...</button>
+  </div>
+
+
+
+  <div class="page" id="page3">
+    <h1 id="typing" class="glow"></h1>
+    <button onclick="nextPage(4)">Continueee...</button>
+  </div>
+
+  <div class="page" id="page4">
+    <h1 class="glow">Will You Be Mine Forever? 💍</h1>
+    <button onclick="yesClick()">Yes 💖</button>
+    <button id="noBtn" onmouseover="moveNo()">No 😜</button>
+  </div>
+
+  <div class="page" id="page5">
+    <h1 class="glow" id="funnyText">Are you sure you want to continue? 😏</h1>
+    <button id="yesBtnFunny" onclick="nextFunny()">Yes 😍</button>
+    <button id="noBtn2" onclick="shrinkNo()">No 😜</button>
+  </div>
+
+  <div class="page" id="countdownPage">
+    <div class="countdown-container">
+      <h2 class="countdown-title">Something Special is Coming... 💖</h2>
+      <div class="countdown-number" id="countdownNumber">5</div>
+      <div class="pulse-circle"></div>
+    </div>
+  </div>
+
+
+  <div class="page" id="page6">
+    <div class="final-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png">
+      <h1 class="glow heartbeat"> Happy Birthday, my favorite person ❤️🎉</h1>
+
+      <div class="final-text">
+        Happy Birthday to the love of my life ❤️🎉<br>
+        You are not just my husband, you are my safe place, my biggest support, and my greatest happiness 💖<br>
+        Every day with you feels special, but today is extra special because it’s the day you were born 😘<br>
+        Thank you for loving me, understanding me, and always being there no matter what <br>
+        I’m so lucky to have you in my life, and I can’t imagine my world without you 💕<br>
+        I pray that this year brings you endless happiness, success, and everything your heart desires ✨<br>
+        I will always stand by your side, today and forever ❤️<br>
+        I love you more than words can ever express… <br>Happy Birthday my husband 🎂💖
+
+
+      </div>
+
+      <!-- 👇 Secret button -->
+      <button onclick="nextPage(7)">Tap for Secret 💌</button>
+
+
+    </div>
+  </div>
+
+
+  <div class="page" id="page7">
+    <h1 class="glow">My Secret For You 💌</h1>
+
+    <!-- Typing container -->
+    <p id="secretTyping" style="max-width:500px; line-height:1.7;"></p>
+
+    <button onclick="nextPage(6)">Back ❤️</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
